@@ -1,5 +1,5 @@
-pillow
+Pillow
 opencv-python
 opencv-contrib-python
 mysql-connector-python
-tkinter
+tk

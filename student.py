@@ -4,7 +4,7 @@ from PIL import Image,ImageTk
 from tkinter import messagebox
 import mysql.connector
 import cv2
-
+import os
 class student:
     def __init__(self,root):
         self.root=root
@@ -27,9 +27,10 @@ class student:
         self.var_phone=StringVar()
         self.var_address=StringVar()
         self.var_teacher=StringVar()
-
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        
         #bacground image bacground_FRAS.jpg
-        img1=Image.open(r"C:\Users\user\Documents\Projects\Project_FRAS\img\bacground_FRAS.jpg")
+        img1=Image.open(os.path.join(BASE_DIR, "img", "bacground_FRAS.jpg"))
         img1=img1.resize((1366,768),Image.Resampling.LANCZOS)
         self.photoimg1=ImageTk.PhotoImage(img1)
         f_lbl=Label(self.root,image=self.photoimg1)

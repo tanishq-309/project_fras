@@ -14,9 +14,10 @@ class Train:
         self.root=root
         self.root.geometry('1366x768+0+0')
         self.root.title('Train the Dataset')
-
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        
         #bacground image bacground_FRAS.jpg
-        img1=Image.open(r"C:\Users\user\Documents\Projects\Project_FRAS\img\bacground_FRAS.jpg")
+        img1=Image.open(os.path.join(BASE_DIR, "img", "bacground_FRAS.jpg"))
         img1=img1.resize((1366,768),Image.Resampling.LANCZOS)
         self.photoimg1=ImageTk.PhotoImage(img1)
         f_lbl=Label(self.root,image=self.photoimg1)
