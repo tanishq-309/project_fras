@@ -1,4 +1,0 @@
-This first user will have atlasAdmin  permissions for this project.
-Username- admin_dev_root
-Password- fsvIUkbmMTiV6sBG
-Connection String- mongodb+srv://admin_dev_root:fsvIUkbmMTiV6sBG@fras.h8jdb.mongodb.net/
