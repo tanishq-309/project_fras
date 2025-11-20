@@ -1,0 +1,5 @@
+pillow
+opencv-python
+opencv-contrib-python
+mysql-connector-python
+tkinter
